@@ -2,10 +2,10 @@ pipeline {
 
   environment {
     PROJECT = "sentient-207310"
-    APP_NAME = "gceme"
+    APP_NAME = "jenkins"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "jenkins-cd"
-    CLUSTER_ZONE = "us-east1-d"
+    CLUSTER = "cluster-1"
+    CLUSTER_ZONE = "asia-southeast1-b"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
   }
